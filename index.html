@@ -15,7 +15,7 @@ body, html {font-family: Roboto, Arial, Helvetica, sans-serif;
   /* The image used */
   background-image: url("endoc6.png");
 
-  min-height: 350px;
+  min-height: 250px;
 
   /* Center and scale the image nicely */
   background-position: right;
@@ -143,9 +143,10 @@ z-index: 100;*/
 .centered {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 80%;
   transform: translate(-50%, -50%);
 }
+
 
 div.sect {
   width:80%;
@@ -266,9 +267,9 @@ h6{
 h7{
  text-transform: uppercase;
  font-family: 'Roboto', Arial, sans-serif;
- font-weight: 300;
+ font-weight: 500;
  font-size: 40px;
- letter-spacing: 0.1em; 
+ letter-spacing: 0.2em; 
  position: relative; 
  top: 10px;
 
@@ -300,7 +301,8 @@ h8{
   width: 100%;
  /* top: 350px;*/
   z-index: 99;
-  line-height: 90px;
+  line-height: 64px;
+ // line-height: 90px;
   /*display: inline-flex;*/
 }
 
@@ -316,7 +318,8 @@ h8{
 }
 
 #navbar a img{
-  height: 75px;
+ // height: 75px;
+  height: 50px;
   margin-top: 8px;
   top:8px;
   margin-right: 10px;
@@ -521,8 +524,8 @@ hr.full {
 <div class="container3">
   <div class="logo2"></div>
 
-  <div class="centered"> <h7>LOCATION</h7><br><br><h8>1111 Engineering Drive, ECES 121<br>Department of Mechanical Engineering<br>University of Colorado, Boulder<br>
-    Boulder, CO 80309, USA</h8>
+  <div class="centered"><div align="justify"><h7>LOCATION</h7><br><h8><br>Department of Cognitive Robotics<br>Faculty of Mechanical Engineering<br>Technische Universiteit Delft<br>Delft, The Netherlands</h8>
+</div>
 </div>
 </div>
 </div>
@@ -549,12 +552,12 @@ function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("navbar").style.padding = "0px 0px";
     document.getElementById("navbar").style.fontSize = "18px";
-    document.getElementById("navbar").style.lineHeight = "90px";
+    document.getElementById("navbar").style.lineHeight = "64px";
     /*document.getElementsByClassName("navbar img").style.height = "20px";*/
   } else {
     document.getElementById("navbar").style.padding = "0px 0px";
     document.getElementById("navbar").style.fontSize = "24px";
-    document.getElementById("navbar").style.lineHeight = "90px";
+    document.getElementById("navbar").style.lineHeight = "64px";
    /* document.getElementsByClassName("navbar img").style.height = "75px";*/
   }
 }
