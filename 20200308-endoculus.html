@@ -1,0 +1,1027 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400&display=swap" rel="stylesheet">
+
+<style>
+body, html {font-family: Roboto, Arial, Helvetica, sans-serif;
+      height: 100%;
+      margin: 0px;
+      font-weight: 100;}
+
+
+.bg-img {
+  /* The image used */
+  background-image: url("researchbanner1.png");
+
+  min-height: 350px;
+
+  /* Center and scale the image nicely */
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+  /* Needed to position the navbar */
+  position: relative;
+  width: 100%
+}
+
+.head-logo {
+  background-image: url("researchlogo.png");
+  background-size: contain;
+  /*height: 280px;*/
+  min-height: 200px;
+ 
+ 
+
+  /* Center and scale the image nicely */
+
+  background-repeat: no-repeat;
+  /*background-position: center;*/
+  
+  /* Needed to position the logo */
+position: relative;
+/*top: 2px; 
+left: 1400px; 
+z-index: 100;*/  
+  top: 50px; 
+  left: 40px;
+  width: 90%;
+
+}
+
+.logo {
+  background-image: url("logoplain.png");
+  background-size: contain; 
+  /*height: 280px;*/
+  min-height: 75px;
+ 
+ 
+
+  /* Center and scale the image nicely */
+
+  background-repeat: no-repeat;
+  /*background-position: center;*/
+  
+  /* Needed to position the logo */
+  position: relative;
+/*top: 2px; 
+left: 1400px; 
+z-index: 100;*/  
+  top: 160px; 
+  left: 30px;
+
+}
+
+.logo2 {
+  background-image: url("logo.gif"); /*url("bannerwithlogo.png");*/
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  /*background-size: cover;*/ 
+  height: 247px;
+ 
+  /* Center and scale the image nicely */
+
+  background-repeat: no-repeat;
+  /*background-position: center;*/
+  
+  /* Needed to position the logo */
+  position: relative;
+  bottom: 0px; 
+  width: 100%
+
+}
+
+
+.banner {
+  background-image: url("banner.png");
+  position: fixed; 
+  bottom: 0px;
+  background-size: cover;
+  height: 247px;
+
+ 
+  /* Center and scale the image nicely */
+
+  background-repeat: no-repeat;
+  /*background-position: center;*/
+  
+  /* Needed to position the logo */
+  position: relative;
+  bottom: 0px; 
+  width: 100%
+
+}
+
+
+/* The navbar */
+/*.topnav {
+  overflow: hidden;
+  background-color: #bcbbc9e0;
+}
+
+/* Navbar links */
+/*.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: right;
+  padding: 16px 75px;
+  text-decoration: none;
+  font-size: 24px;
+}*/
+
+/*.topnav a:hover {
+  background-color: #ddd;
+  color: #8b89adff;
+}*/
+
+
+.container {
+  position: absolute;
+  top: 0px; 
+  left: 0px; 
+  bottom: 0px;
+  text-align: left;
+  color: white;
+  width: 100%;
+}
+
+/* Position the navbar container inside the image */
+.container2 {
+  position: absolute;
+  margin: 0px;
+  top: 0px;
+  width: auto;
+}
+
+
+.container3 {
+  position: relative;
+  bottom: 0px;
+  text-align: center;
+  color: white;
+}
+
+.imcontainer{
+  background-color: black; 
+  position: relative;
+  width: 100%;
+}
+
+.imcontainer:hover .portrait {
+  opacity: 0.5
+}
+
+.imcontainer:hover .middle {
+  opacity: 1;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.sect {
+  width:80%;
+  margin: auto;
+}
+
+div.sect2{
+  width:95%;
+  margin: auto;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 48%;
+  padding: 10px;
+  text-align: justify;
+}
+
+.columnR {
+  float: left;
+  width: 48%;
+  padding: 10px;
+  text-align: justify;
+}
+
+.column3 {
+  float: left;
+  width: 45%;
+  padding: 10px;
+  text-align: justify;
+}
+
+.column4 {
+  float: left;
+  width: 51%;
+  padding: 10px;
+  text-align: justify;
+}
+
+.column5 {
+  float: left;
+  width: 24%;
+  padding: 5px;
+  text-align: justify;
+}
+
+.column6 {
+  float: left;
+  width: 24%;
+  padding: 5px;
+  text-align: justify;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imtext {
+  color: white;
+  font-size: 1vw;
+  padding: 16px 32px;
+  font-variant: small-caps;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+
+.imcaption {
+
+
+  font-size: 16px;
+
+    /*padding: 16px 32px;*/
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+}
+
+
+img.portrait{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; 
+  top: 0px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.responsive-img {
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.responsive-cont {
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;
+  width:600;
+  max-width: 100%;
+  height: auto;
+  text-align: justify;
+  /*border: 3px solid red;*/
+}
+
+.container-cent {
+    margin-top: 50px;
+    max-width: 50%;
+    text-align: justify;
+
+    position: relative;
+    left: 50%;
+  /*  margin-right: -50%;*/
+    transform: translate(-50%, 0%) }
+}
+.resize_fit_center {
+    max-width:20%;
+    max-height:100%;
+    vertical-align: middle;
+    
+}
+
+p{
+ position: relative; 
+ top: 15px;
+}
+
+h2{
+ /*font-variant: small-caps;*/
+ text-transform: uppercase;
+ font-family: 'Roboto', Arial, sans-serif;
+ font-weight: 100;
+ font-size: 40;
+ letter-spacing: 0.3em; 
+ position: relative; 
+ top: 10px;
+
+ margin-bottom: 0px;
+}
+
+
+h3{
+ margin-top: -30px;
+ font-variant: small-caps;
+ font-family: 'Roboto', Arial, sans-serif;
+ font-weight: 300;
+ font-size: 60;
+
+ letter-spacing: 0.1em;
+ 
+}
+
+
+h4{
+ font-family: 'Roboto', Arial, sans-serif;
+ font-weight: 300;
+ font-size: 30;
+ font-style: italic; 
+ letter-spacing: 0.1em; 
+ margin-bottom: -30px 
+}
+
+h5{
+ font-family: 'Roboto', Arial, sans-serif;
+ font-weight: 300;
+ font-size: 30;
+ font-style: normal; 
+ letter-spacing: 0.1em;  
+}
+
+
+h6{
+ margin-top: 60px;
+ font-variant: small-caps;
+ font-family: 'Roboto', Arial, sans-serif;
+ font-weight: 300;
+ font-size: 80;
+
+ letter-spacing: 0.1em;
+ margin-bottom: 0px;  
+}
+
+
+h7{
+ text-transform: uppercase;
+ font-family: 'Roboto', Arial, sans-serif;
+ font-weight: 300;
+ font-size: 40px;
+ letter-spacing: 0.1em; 
+ position: relative; 
+ top: 10px;
+
+ margin-bottom: -10px;
+}
+
+h8{
+ margin-top: -10px;
+ font-family: 'Roboto', Arial, sans-serif;
+ font-weight: 300;
+ font-size: 18px;
+ letter-spacing: 0.01em; 
+ position: relative; 
+ top: 10px;
+
+ margin-bottom: 0px;
+}
+
+
+h9{
+ margin-top: -250px;
+ position:relative;
+ top: 65;
+ left: 260;
+ font-variant: small-caps;
+ font-family: 'Roboto', Arial, sans-serif;
+ font-weight: 400;
+ font-size: 150;
+
+ letter-spacing: 0.1em;
+ margin-bottom: 0px;  
+ display: inline-flex; 
+}
+
+
+#navbar {
+  overflow: hidden;
+  background-color: #bcbbc9ef;
+  padding: 0px 0px;
+  font-size: 24px;
+  font-weight: 400;
+  transition: 0.4s;
+ /* position: absolute;*/
+  width: 100%;
+ /* top: 350px;*/
+  z-index: 99;
+  line-height: 90px;
+  /*display: inline-flex;*/
+}
+
+#navbar a {
+  float: left;
+  color: #ffffffff;
+  text-align: center;
+  top: 20px;
+  padding: 0px 20px;
+  text-decoration: none; 
+  border-radius: 0px;
+  display: inline-flex;
+}
+
+#navbar a img{
+  height: 75px;
+  margin-top: 8px;
+  top:8px;
+  margin-right: 10px;
+  display: inline-flex; 
+}
+
+#navbar #logo1 {
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: #8b89adff;
+}
+
+#navbar a.active {
+  background-color:dodgerblue;
+  color: white;
+}
+
+#navbar-right {
+  float: right;
+}
+
+.content {
+  padding: 0px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 90px;
+}
+
+hr { 
+  display: block;
+  margin-top: 0.005em;
+  margin-bottom: 0.005em;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-style: inset;
+  border-width: 1px;
+  display: block; 
+} 
+
+hr.small { 
+  display: block;
+  margin-top: 0.0001em;
+  margin-bottom: 0.0001em;
+  margin-left: 29%;
+  margin-right: 29%;
+  border-style: inset;
+  border-width: 1px;
+  display: block; 
+} 
+
+hr.full { 
+  display: block;
+  margin-top: 0.005em;
+  margin-bottom: 0.0005em;
+  margin-left: 0%;
+  margin-right: 0%;
+  border-style: inset;
+  border-width: 1px;
+  display: block; 
+} 
+
+
+@media screen and (max-width: 580px) {
+  #navbar {
+   padding: 20px 10px !important;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+    display: block;
+  }
+}
+
+
+
+
+</style>
+</head>
+
+
+<body>
+
+
+
+      <div id="navbar">
+      <a href="#home"><img src="kiteicon.png">HOME</a>
+      <a href="#news"><img src="umbrellaicon.png">NEWS</a>
+      <a href="#contact"><img src="doctoricon.png">CONTACT</a>
+      <a href="#about"><img src="readingicon.png">ABOUT</a>
+      <a href="#research"><img src="testtubeicon.png">RESEARCH</a>
+
+  </div>
+
+
+
+
+
+<div class="content">
+
+
+
+
+
+
+<div style="margin-top:-40px;padding:5px 5px 200px; font-size:22px;">
+
+<div class="sect">
+<h6>endoculus design</h6>
+<hr class="full">
+<div class="sect2">
+
+<div class="row">
+    <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<div class="row">
+  
+  <div class='responsive-cont' style="width:800;">
+      <a href='#'>
+      <img class='responsive-img' src="Images/Research/endoc1.png" alt="endoculus">
+      </a>
+      <p class="imcaption"> Figure 1: The Endoculus is shown along with the external electronics and userinput. Note that in addition to a camera and onboard lighting, a conventional endoscope contains water and air ports for irrigation and insufflation as well as a tool port for various endoscopic tools. The Endoculus also includes all of these features onboard. </p> 
+  </div>  
+
+</div>
+
+<div class="row">
+    <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<div class="row">
+  
+  <div class='responsive-cont'>
+      <a href='#'>
+      <img class='responsive-img'
+         src="Images/Research/endoc2.png" alt="endoculus">
+      </a>
+      <p class="imcaption"> Figure 1: The Endoculus is shown along with the external electronics and userinput. Note that in addition to a camera and onboard lighting, a conventional endoscope contains water and air ports for irrigation and insufflation as well as a tool port for various endoscopic tools. The Endoculus also includes all of these features onboard. </p> 
+  </div>  
+
+</div>
+
+<div class="row">
+    <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<div class="row">
+  
+  <div class='responsive-cont'>
+      <a href='#'>
+      <img class='responsive-img' src="Images/Research/endoc3.png" alt="endoculus">
+      </a>
+      <p class="imcaption"> Figure 1: The Endoculus is shown along with the external electronics and userinput. Note that in addition to a camera and onboard lighting, a conventional endoscope contains water and air ports for irrigation and insufflation as well as a tool port for various endoscopic tools. The Endoculus also includes all of these features onboard. </p> 
+  </div>  
+
+</div>
+
+<div class="row">
+    <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<div class="row">
+  
+  <div class='responsive-cont'>
+      <a href='#'>
+      <img class='responsive-img' src="Images/Research/endoc4.png" alt="endoculus">
+      </a>
+      <p class="imcaption"> Figure 1: The Endoculus is shown along with the external electronics and userinput. Note that in addition to a camera and onboard lighting, a conventional endoscope contains water and air ports for irrigation and insufflation as well as a tool port for various endoscopic tools. The Endoculus also includes all of these features onboard. </p> 
+  </div>  
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<div class="sect">
+<h6>tissue testing</h6>
+<hr class="full">
+<div class="sect2">
+
+<div class="row">
+    <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<div class="row">
+  
+  <div class='responsive-cont'>
+      <a href='#'>
+      <img class='responsive-img' src="Images/Research/endoc5.png" alt="endoculus">
+      </a>
+      <p class="imcaption"> Figure 1: The Endoculus is shown along with the external electronics and userinput. Note that in addition to a camera and onboard lighting, a conventional endoscope contains water and air ports for irrigation and insufflation as well as a tool port for various endoscopic tools. The Endoculus also includes all of these features onboard. </p> 
+  </div>  
+
+</div>
+
+
+
+</div>
+</div>
+
+
+<div class="sect">
+<h6>navigation and localization</h6>
+<hr class="full">
+<div class="sect2">
+
+<div class="row">
+    <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<div class="row">
+  
+  <div class='responsive-cont'>
+      <a href='#'>
+      <img class='responsive-img' src="Images/Research/endoc6.png" alt="endoculus">
+      </a>
+      <p class="imcaption"> Figure 1: The Endoculus is shown along with the external electronics and userinput. Note that in addition to a camera and onboard lighting, a conventional endoscope contains water and air ports for irrigation and insufflation as well as a tool port for various endoscopic tools. The Endoculus also includes all of these features onboard. </p> 
+  </div>  
+
+</div>
+
+<div class="row">
+    <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<div class="row">
+  
+  <div class='responsive-cont'>
+      <a href='#'>
+      <img class='responsive-img' src="Images/Research/endoc7.png" alt="endoculus">
+      </a>
+      <p class="imcaption"> Figure 1: The Endoculus is shown along with the external electronics and userinput. Note that in addition to a camera and onboard lighting, a conventional endoscope contains water and air ports for irrigation and insufflation as well as a tool port for various endoscopic tools. The Endoculus also includes all of these features onboard. </p> 
+  </div>  
+
+</div>
+
+<div class="row">
+    <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<div class="row">
+  
+  <div class='responsive-cont'>
+      <a href='#'>
+      <img class='responsive-img' src="Images/Research/endoc8.png" alt="endoculus">
+      </a>
+      <p class="imcaption"> Figure 1: The Endoculus is shown along with the external electronics and userinput. Note that in addition to a camera and onboard lighting, a conventional endoscope contains water and air ports for irrigation and insufflation as well as a tool port for various endoscopic tools. The Endoculus also includes all of these features onboard. </p> 
+  </div>  
+
+</div>
+
+<div class="row">
+    <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<div class="row">
+  
+  <div class='responsive-cont'>
+      <a href='#'>
+      <img class='responsive-img' src="Images/Research/endoc9.png" alt="endoculus">
+      </a>
+      <p class="imcaption"> Figure 1: The Endoculus is shown along with the external electronics and userinput. Note that in addition to a camera and onboard lighting, a conventional endoscope contains water and air ports for irrigation and insufflation as well as a tool port for various endoscopic tools. The Endoculus also includes all of these features onboard. </p> 
+  </div>  
+
+</div>
+
+
+<div class="row">
+    <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<div class="row">
+  
+  <div class='responsive-cont'>
+      <a href='#'>
+      <img class='responsive-img' src="Images/Research/endoc10.png" alt="endoculus">
+      </a>
+      <p class="imcaption"> Figure 1: The Endoculus is shown along with the external electronics and userinput. Note that in addition to a camera and onboard lighting, a conventional endoscope contains water and air ports for irrigation and insufflation as well as a tool port for various endoscopic tools. The Endoculus also includes all of these features onboard. </p> 
+  </div>  
+
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+<div class="sect">
+<h6>endoculus design</h6>
+<hr class="full">
+<div class="sect2">
+<div class="row">
+  <div class="column" style="width:37%;">
+    <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+ 
+  <div class="column5" style="width:30%;">
+      <div class="imcontainer" style="width:100%; margin-top:30px;">
+         <img class="portrait" src="Images/Research/Endoculus.png" alt="endoculus" style="width:100%;">
+         <div class="middle">
+            <div class="imtext">endoculus</div>
+         </div>
+      </div>
+  </div>
+ 
+  <div class="column6" style="width:30%;">
+     <div class="imcontainer" style="width:100%; margin-top:30px;">
+        <img class="portrait" src="Images/Research/Simulator.png" alt="simulator" style="width:100%;">
+        <div class="middle">
+           <div class="imtext">active gi simulator</div>
+        </div>
+     </div>
+
+     <div class="imcontainer" style="width:100%; margin-top:14px;">
+        <img class="portrait" src="Images/Research/REP.png" alt="REP" style="width:100%;">
+        <div class="middle">
+           <div class="imtext">robotic endoscope platform</div>
+        </div>
+     </div>
+  </div>
+
+</div>
+</div>
+</div>
+
+
+<div class="sect">
+<h6>preliminary testing</h6>
+<hr class="full">
+<div class="sect2">
+<div class="row">
+
+ 
+  <div class="column5" style="width:24%;">
+      <div class="imcontainer" style="width:100%; margin-top:30px;">
+         <img class="portrait" src="Images/Research/Spine.png" alt="spine project" style="width:100%;">
+         <div class="middle">
+            <div class="imtext">spinal fusion</div>
+         </div>
+      </div>
+  </div>
+ 
+  <div class="column6" style="width:36%;">
+     <div class="imcontainer" style="width:100%; margin-top:30px;">
+        <img class="portrait" src="Images/Research/Pain.png" alt="algometer" style="width:100%;">
+        <div class="middle">
+           <div class="imtext">algometer</div>
+        </div>
+     </div>
+
+     <div class="imcontainer" style="width:100%; margin-top:10px;">
+        <img class="portrait" src="Images/Research/Myoma.png" alt="Myoma Removal" style="width:100%;">
+        <div class="middle">
+           <div class="imtext">safe myoma removal</div>
+        </div>
+     </div>
+  </div>
+
+  <div class="column" style="width:37%;">
+    <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+</div>
+</div>
+</div>
+
+
+<div class="sect">
+<h6>visual navigation and localization</h6>
+<hr class="full">
+<div class="sect2">
+<div class="row">
+  <div class="column"  style="width:36%;">
+    <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut liquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+ 
+  <div class="column5" style="width:30%;">
+      <div class="imcontainer" style="width:100%; margin-top:30px;">
+         <img class="portrait" src="Images/Research/GL10.png" alt="Greased Lightening!" style="width:100%;">
+         <div class="middle">
+            <div class="imtext">GL-10 vtol uav</div>
+         </div>
+      </div>
+  </div>
+ 
+  <div class="column6" style="width:31%;">
+     <div class="imcontainer" style="width:99%; margin-top:30px;">
+        <img class="portrait" src="Images/Research/Tilt-Wing.png" alt="Tilt-Wing" style="width:100%;">
+        <div class="middle">
+           <div class="imtext">high endurance tilt-wing</div>
+        </div>
+     </div>
+  </div>
+
+</div>
+</div>
+</div>
+
+
+<div class="sect">
+<h6>other projects</h6>
+<hr class="full">
+<div class="sect2">
+<div class="row">
+
+ 
+  <div class="column5" style="width:30%;">
+      <div class="imcontainer" style="width:100%; margin-top:30px;">
+         <img class="portrait" src="Images/Research/Funfetch.png" alt="Fun Fetch" style="width:100%;">
+         <div class="middle">
+            <div class="imtext">fun fetch!</div>
+         </div>
+      </div>
+  </div>
+ 
+  <div class="column6" style="width:28%;">
+     <div class="imcontainer" style="width:100%; margin-top:30px;">
+        <img class="portrait" src="Images/Research/Sasha.png" alt="Sasha" style="width:100%;">
+        <div class="middle">
+           <div class="imtext">external sensing/decision making</div>
+        </div>
+     </div> 
+
+     <div class="imcontainer" style="width:100%; margin-top:10px;">
+        <img class="portrait" src="Images/Research/Fountain.png" alt="automated fountain" style="width:100%;">
+        <div class="middle">
+           <div class="imtext">interactive water display</div>
+        </div>
+     </div>
+  </div>
+  <div class="column" style="width:39%;">
+    <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+</div>
+</div>
+</div>
+
+
+
+<div class="sect">
+<h6>spinal fusion</h6>
+<hr class="full">
+<div class="sect2">
+<div class="row">
+  <div class="column">
+    <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div class="columnR">
+     <img class="portrait" src="endocandkyoto.jpeg" alt="endokyoto" style="width:82%;">
+<br>
+<br>
+  </div>
+
+</div>
+</div>
+</div>
+
+
+<div class="sect">
+<h6>vtol uavs</h6>
+<hr class="full">
+<div class="sect2">
+<div class="row">
+  <div class="column">
+    <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div class="columnR">
+    <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+<div style="margin-top:100px;padding:5px 5px 0px;font-size:20px">
+<div class="sect">
+<div class="sect2">
+<div class="row">
+  <div class="column3">
+
+<img class="portrait" src="endocandkyoto.jpeg" alt="endokyoto" style="width:82%;">
+<br>
+<br>
+<img class="portrait" src="REPtest.jpg" alt="REP1" style="width:82%;">
+</div>
+<div class="column4">
+<img class="portrait" src="mewithendoc.png" alt="endoandme" style="width:90%;">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="banner">
+<div class="container3">
+  <div class="logo2"></div>
+
+  <div class="centered"> <h7>LOCATION</h7><br><br><h8>1111 Engineering Drive, ECES 121<br>Department of Mechanical Engineering<br>University of Colorado, Boulder<br>
+    Boulder, CO 80309, USA</h8>
+</div>
+</div>
+</div>
+
+
+
+<script>
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {myFunction(), scrollFunction()};
+
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= (sticky)) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "0px 0px";
+    document.getElementById("navbar").style.fontSize = "18px";
+    document.getElementById("navbar").style.lineHeight = "90px";
+    /*document.getElementsByClassName("navbar img").style.height = "20px";*/
+  } else {
+    document.getElementById("navbar").style.padding = "0px 0px";
+    document.getElementById("navbar").style.fontSize = "24px";
+    document.getElementById("navbar").style.lineHeight = "90px";
+   /* document.getElementsByClassName("navbar img").style.height = "75px";*/
+  }
+}
+</script>
+
+</body>
+</html>

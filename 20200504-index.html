@@ -1,0 +1,564 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400&display=swap" rel="stylesheet">
+
+<style>
+body, html {font-family: Roboto, Arial, Helvetica, sans-serif;
+      height: 100%;
+      margin: 0px;
+      font-weight: 100;}
+
+
+.bg-img {
+  /* The image used */
+  background-image: url("endoc6.png");
+
+  min-height: 350px;
+
+  /* Center and scale the image nicely */
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+  /* Needed to position the navbar */
+  position: relative;
+  width: 100%
+}
+
+.logo {
+  background-image: url("logoplain.png");
+  background-size: contain; 
+  /*height: 280px;*/
+  min-height: 75px;
+ 
+ 
+
+  /* Center and scale the image nicely */
+
+  background-repeat: no-repeat;
+  /*background-position: center;*/
+  
+  /* Needed to position the logo */
+  position: relative;
+/*top: 2px; 
+left: 1400px; 
+z-index: 100;*/  
+  top: 160px; 
+  left: 30px;
+
+}
+
+.logo2 {
+  background-image: url("logo.gif"); /*url("bannerwithlogo.png");*/
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  /*background-size: cover;*/ 
+  height: 247px;
+ 
+  /* Center and scale the image nicely */
+
+  background-repeat: no-repeat;
+  /*background-position: center;*/
+  
+  /* Needed to position the logo */
+  position: relative;
+  bottom: 0px; 
+  width: 100%
+
+}
+
+
+.banner {
+  background-image: url("banner.png");
+  position: fixed; 
+  bottom: 0px;
+  background-size: cover;
+  height: 247px;
+
+ 
+  /* Center and scale the image nicely */
+
+  background-repeat: no-repeat;
+  /*background-position: center;*/
+  
+  /* Needed to position the logo */
+  position: relative;
+  bottom: 0px; 
+  width: 100%
+
+}
+
+
+/* The navbar */
+/*.topnav {
+  overflow: hidden;
+  background-color: #bcbbc9e0;
+}
+
+/* Navbar links */
+/*.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: right;
+  padding: 16px 75px;
+  text-decoration: none;
+  font-size: 24px;
+}*/
+
+/*.topnav a:hover {
+  background-color: #ddd;
+  color: #8b89adff;
+}*/
+
+
+.container {
+  position: absolute;
+  top: 50px; 
+  left: 100px; 
+  bottom: 0px;
+  text-align: left;
+  color: white;
+}
+
+/* Position the navbar container inside the image */
+.container2 {
+  position: absolute;
+  margin: 0px;
+  top: 0px;
+  width: auto;
+}
+
+
+.container3 {
+  position: relative;
+  bottom: 0px;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.sect {
+  width:80%;
+  margin: auto;
+}
+
+div.sect2{
+  width:95%;
+  margin: auto;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 48%;
+  padding: 10px;
+  text-align: justify;
+}
+
+.columnR {
+  float: left;
+  width: 48%;
+  padding: 10px;
+  text-align: justify;
+}
+
+.column3 {
+  float: left;
+  width: 45%;
+  padding: 10px;
+  text-align: justify;
+}
+
+.column4 {
+  float: left;
+  width: 51%;
+  padding: 10px;
+  text-align: justify;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+img.portrait {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; 
+  top: 10px;
+}
+
+p{
+ position: relative; 
+ top: 15px;
+}
+
+h2{
+ /*font-variant: small-caps;*/
+ text-transform: uppercase;
+ font-family: 'Roboto', Arial, sans-serif;
+ font-weight: 100;
+ font-size: 40;
+ letter-spacing: 0.3em; 
+ position: relative; 
+ top: 10px;
+
+ margin-bottom: 0px;
+}
+
+
+h3{
+ margin-top: -30px;
+ font-variant: small-caps;
+ font-family: 'Roboto', Arial, sans-serif;
+ font-weight: 300;
+ font-size: 60;
+
+ letter-spacing: 0.1em;
+ 
+}
+
+
+h4{
+ font-family: 'Roboto', Arial, sans-serif;
+ font-weight: 300;
+ font-size: 30;
+ font-style: italic; 
+ letter-spacing: 0.1em; 
+ margin-bottom: -30px 
+}
+
+h5{
+ font-family: 'Roboto', Arial, sans-serif;
+ font-weight: 300;
+ font-size: 30;
+ font-style: normal; 
+ letter-spacing: 0.1em;  
+}
+
+
+h6{
+ margin-top: 60px;
+ font-variant: small-caps;
+ font-family: 'Roboto', Arial, sans-serif;
+ font-weight: 300;
+ font-size: 80;
+
+ letter-spacing: 0.1em;
+ margin-bottom: 0px;  
+}
+
+
+h7{
+ text-transform: uppercase;
+ font-family: 'Roboto', Arial, sans-serif;
+ font-weight: 300;
+ font-size: 40px;
+ letter-spacing: 0.1em; 
+ position: relative; 
+ top: 10px;
+
+ margin-bottom: -10px;
+}
+
+h8{
+ margin-top: -10px;
+ font-family: 'Roboto', Arial, sans-serif;
+ font-weight: 300;
+ font-size: 18px;
+ letter-spacing: 0.01em; 
+ position: relative; 
+ top: 10px;
+
+ margin-bottom: 0px;
+}
+
+
+
+#navbar {
+  overflow: hidden;
+  background-color: #bcbbc9ef;
+  padding: 0px 0px;
+  font-size: 24px;
+  font-weight: 400;
+  transition: 0.4s;
+ /* position: absolute;*/
+  width: 100%;
+ /* top: 350px;*/
+  z-index: 99;
+  line-height: 90px;
+  /*display: inline-flex;*/
+}
+
+#navbar a {
+  float: left;
+  color: #ffffffff;
+  text-align: center;
+  top: 20px;
+  padding: 0px 20px;
+  text-decoration: none; 
+  border-radius: 0px;
+  display: inline-flex;
+}
+
+#navbar a img{
+  height: 75px;
+  margin-top: 8px;
+  top:8px;
+  margin-right: 10px;
+  display: inline-flex; 
+}
+
+#navbar #logo1 {
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: #8b89adff;
+}
+
+#navbar a.active {
+  background-color:dodgerblue;
+  color: white;
+}
+
+#navbar-right {
+  float: right;
+}
+
+.content {
+  padding: 0px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 90px;
+}
+
+hr { 
+  display: block;
+  margin-top: 0.005em;
+  margin-bottom: 0.005em;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-style: inset;
+  border-width: 1px;
+  display: block; 
+} 
+
+hr.small { 
+  display: block;
+  margin-top: 0.0001em;
+  margin-bottom: 0.0001em;
+  margin-left: 29%;
+  margin-right: 29%;
+  border-style: inset;
+  border-width: 1px;
+  display: block; 
+} 
+
+hr.full { 
+  display: block;
+  margin-top: 0.005em;
+  margin-bottom: 0.0005em;
+  margin-left: 0%;
+  margin-right: 0%;
+  border-style: inset;
+  border-width: 1px;
+  display: block; 
+} 
+
+
+@media screen and (max-width: 580px) {
+  #navbar {
+   padding: 20px 10px !important;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+    display: block;
+  }
+}
+
+
+
+
+</style>
+</head>
+
+
+<body>
+
+<div class="bg-img">
+<div class="container">
+<p><h4>"It is only afterward that a new idea seems reasonable. <br>
+    To begin with, it usually seems unreasonable."</h4>
+    <h5>-Issac Asimov</h5></p>
+</div>
+
+</div>
+
+      <div id="navbar">
+      <a href="#home"><img src="kiteicon.png">HOME</a>
+      <a href="#news"><img src="umbrellaicon.png">NEWS</a>
+      <a href="#contact"><img src="doctoricon.png">CONTACT</a>
+      <a href="#about"><img src="readingicon.png">ABOUT</a>
+      <a href="#research"><img src="testtubeicon.png">RESEARCH</a>
+
+  </div>
+
+
+
+
+
+<div class="content">
+<p>
+<img class="portrait" src="myface.png" alt="face" style="width:20%;"></p>
+<p>
+<h2 style="text-align:center"> J. Micah Prendergast</h2></p>
+
+<p><h3 style="text-align:center">experimental roboticist</h3></p>
+<hr>
+
+
+<div style="margin-top:100px;padding:5px 5px 0px;font-size:20px">
+<div class="sect">
+<div class="sect2">
+<div class="row">
+  <div class="column3">
+
+<img class="portrait" src="endocandkyoto.jpeg" alt="endokyoto" style="width:82%;">
+<br>
+<br>
+<img class="portrait" src="REPtest.jpg" alt="REP1" style="width:82%;">
+</div>
+<div class="column4">
+<img class="portrait" src="mewithendoc.png" alt="endoandme" style="width:90%;">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div style="margin-top:100px;padding:5px 5px 200px;font-size:20px">
+<div class="sect">
+<h6>research</h6>
+<hr class="full">
+<div class="sect2">
+<div class="row">
+  <div class="column">
+    <p>My background is broadly focused in the design, sensing and control of mechatronic and robotic systems with a focus on the application of computer vision techniques for robotic perception, state estimation and control. I am particularly interested in applying computer vision and other sensing modalities to biomedical applications to further medical device autonomy and to aid navigation, localization and task-planning capabilities for these systems. </p>
+  </div>
+  <div class="columnR">
+    <p>More generally, I have a strong interest in mechatronic design across many applications (from dog toys and gardening to medical devices and unmanned aircraft) and in the application of feedback/control to these systems. In addition, I am interested in developing robust experimental methods for evaluating feedback/control and robotic systems in real-time.</p>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div class="sect">
+<h6>news</h6>
+<hr class="full">
+<div class="sect2">
+<div class="row">
+  <div class="column">
+    <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div class="columnR">
+    <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div class="sect">
+<h6>about</h6>
+<hr class="full">
+<div class="sect2">
+<div class="row">
+  <div class="column">
+    <p>I am an experimental roboticist interested in robot perception challenges and mechatronic system design and validation. I completed my undergraduate degree in Mechatronics at North Carolina State and the University of North Carolina at Asheville via their joint degree program in 2013 and I completed my PhD and Masters degrees from the University of Colorado, Boulder in 2015 and 2019 respectively. I am currently working as a postdoctoral researcher at the University of Colorado where my research focuses on the challenge of robotic endoscope perception in vivo and on autonomous navigation and the application of Simultaneous Localization and Mapping (SLAM) algorithms for robotic endoscope systems.</p>
+  </div>
+  <div class="columnR">
+    <p>In addition to my love for robotics research, I enjoy running, hiking and woodworking and have been known to practice classical guitar on occasion. I have volunteered as the head fencing coach at the University of Colorado for the past 5 years where I have been fortunate to work with talented young fencers across all experience levels! When I am not under a stay-at-home order, you can find me trying my best to work, while casually sipping coffee at any number of local shops in downtown Boulder. </p>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="banner">
+<div class="container3">
+  <div class="logo2"></div>
+
+  <div class="centered"> <h7>LOCATION</h7><br><br><h8>1111 Engineering Drive, ECES 121<br>Department of Mechanical Engineering<br>University of Colorado, Boulder<br>
+    Boulder, CO 80309, USA</h8>
+</div>
+</div>
+</div>
+
+
+
+<script>
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {myFunction(), scrollFunction()};
+
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= (sticky)) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "0px 0px";
+    document.getElementById("navbar").style.fontSize = "18px";
+    document.getElementById("navbar").style.lineHeight = "90px";
+    /*document.getElementsByClassName("navbar img").style.height = "20px";*/
+  } else {
+    document.getElementById("navbar").style.padding = "0px 0px";
+    document.getElementById("navbar").style.fontSize = "24px";
+    document.getElementById("navbar").style.lineHeight = "90px";
+   /* document.getElementsByClassName("navbar img").style.height = "75px";*/
+  }
+}
+</script>
+
+</body>
+</html>
